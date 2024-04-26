@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root{
+    --background: #161616;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 4.3rem;
+}
+
+.bi-list {
+    font-size: 20px;
+}
+
+.header__figure {
+}
+
+.header__img {
+}
+
+.nav {
+}
+
+.nav__header {
+}
+
+.bi-x-circle {
+}
+
+.nav__lists {
+}
+
+.nav__list {
+}
+
+.nav__link {
+}
+
+.cta {
+}
+
+.bi-chevron-down {
+}
