@@ -5,54 +5,138 @@
 }
 
 :root{
-    --background: #161616;
+    --gray: #161616;
+    --gray2: #a3a3a3;
+    --red: #da292a;
+    --white: #fff;
+    --black: #000;
+    --font-family-1: 'Clash Grotesk', sans-serif;
+    --font-family-2: "Bebas Neue", sans-serif;
 }
 
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: black;
-    color: white;
+    font-family: var(--font-family-2);
 }
 
 .header {
-    background-color: var(--background);
+    background-color: var(--gray);
     position: sticky;
     top: 0;
     width: 100%;
-    height: 4.3rem;
+    height: 3.3rem;
+    padding-inline: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__label {
+    width: max-content;
+}
+
+.header__input{
+    display: none;
 }
 
 .bi-list {
-    font-size: 20px;
+    color: var(--gray2);
+    display: block;
+    font-size: 2.2rem;
 }
 
 .header__figure {
+    width: 2.5rem;
+    overflow: hidden;
+    margin-right: auto;
 }
 
 .header__img {
+    display: block;
+    width: 100%;
 }
 
 .nav {
+    background-color: #161616db;
+    position: absolute;
+    inset: 0;
+    height: 100vh;
 }
 
 .nav__header {
+    background-color: var(--gray);
+    height: 3.3rem;
+    width: 100%;
+    max-width: 380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: .7rem;
+}
+
+.nav__figure{
+    width: 55px;
+}
+
+.nav__img{
+    width: 100%;
+}
+.nav__label{
+}
+
+
+.nav__input{
+    display: none;
 }
 
 .bi-x-circle {
+    color: var(--gray2);
+    font-size: 2rem;
 }
 
 .nav__lists {
+    background-color: #000;
+    width: 100%;
+    max-width: 380px;
+    height: 100%;
+    padding: .8rem 1.5rem;
+    overflow-y: scroll;
 }
 
 .nav__list {
+    list-style: none;
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--gray2);
 }
 
 .nav__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: .9rem;
 }
 
 .cta {
+    background-color: var(--red);
+    width: 120px;
+    overflow: hidden;
+    /* display: block; */
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    font-size: .9rem;
+    text-wrap: wrap;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .6rem;
+    padding: 0 1rem;
 }
 
 .bi-chevron-down {
+    /* outline: #000 1px solid; */
+    font-size: .9rem;
 }
