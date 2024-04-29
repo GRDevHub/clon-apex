@@ -317,7 +317,7 @@ video, img{
 }
 
 .cards{
-    background-image: url(../assets/background-img.jpg);
+    background-image: linear-gradient(to bottom, transparent, var(--mostaza)), url(../assets/background-img.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 4rem 1.4rem;
@@ -371,6 +371,62 @@ video, img{
 }
 .card__paragraph {
     font-family: var(--font-family-1);
+}
+
+.beyond{
+    background-image: linear-gradient(0deg, var(--black) 50%, transparent 60%), url(../assets/backround-2.jpg);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+    border-top: 1px solid var(--gray2);
+}
+
+.beyond__title {
+    font-family: var(--font-family-2);
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+.beyond__paragraph {
+    font-family: var(--font-family-1);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.card2__container {
+    display: grid;
+    grid-auto-columns: auto;
+    gap: 3.5rem;
+}
+
+.card2 {
+    font-family: var(--font-family-1);
+}
+
+.card2__img {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: contain;
+}
+
+.card2__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card2__title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-block: 1.2rem;
+}
+
+.card2__paragraph {
+    font-size: 1.1rem;
+    text-align: center;
+    text-wrap: balance;
+    padding-inline: 1.2rem;
 }
 
 
