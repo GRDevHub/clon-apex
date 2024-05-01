@@ -175,8 +175,10 @@
         </section>
 
         <section class="form">
-            <h2 class="form__title">SIGN UP FOR APEX LEGENDS™ NEWS</h2>
-            <p class="form__parargaph">Sign up today to receive the latest Apex Legends™ news, updates, behind-the-scenes content, offers, and more (including other EA news, products, events, and promotions) by email.</p>
+            <div class="form__texts">
+                <h2 class="form__title">SIGN UP FOR APEX LEGENDS™ NEWS</h2>
+                <p class="form__parargaph">Sign up today to receive the latest Apex Legends™ news, updates, behind-the-scenes content, offers, and more (including other EA news, products, events, and promotions) by email.</p>
+            </div>
 
             <form action="#" class="form__form">
                 <label class="form__label" for="email">
@@ -190,20 +192,26 @@
                 </label>
 
                 <label class="form__label" for="option">
-                    <select name="select">
+                    <select class="form__input" name="select">
                         <option value="1">United States</option>
                         <option value="1">Argentina</option>
                         <option value="1">Brazil</option>
                     </select>
                 </label>
 
-                <label for="form__label">
-                    <input type="checkbox" name="politica">
-                    I can unsubscribe at any time by changing my email preferences, contacting privacyadmin.ea.com, or writing to Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood Shores Pkwy, Redwood City, CA, 94065, USA.
+                <label class='form__label' for="politica">
+                    <input class="form__input" type="checkbox" name="politica">
+                    I can unsubscribe at any time by changing my <span>email preferences</span>, contacting <span>privacyadmin.ea.com</span>, or writing to Electronic Arts Inc., ATTN: Email Opt-Out, 209 Redwood Shores Pkwy, Redwood City, CA, 94065, USA.
                 </label>
 
-                <input class="cta" type="submit" value="Sign Up">
+                <input class="cta form__cta" type="submit" value="Sign Up">
             </form>
+        </section>
+
+        <section class="play">
+            <div class="icons">
+                <img src="./assets/logos.svg" alt="Iconos Apex" class="icons__img">
+            </div>
         </section>
     </main>
 
